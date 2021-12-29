@@ -1,0 +1,75 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+
+
+
+.container{
+    margin: 0 auto;
+}
+
+
+.form-authorization{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.form-authorization form{
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    border-radius: 30px;
+    background-color: rgba(255,255,255,.5);
+}
+
+.form-authorization form > input{
+    margin: 20px 0px;
+    height: 40px;
+    width: 220px;
+    border: 1px solid black;
+    border-radius: 6px;
+    user-select: text;
+}
+
+#password{
+    user-select: none;
+}
+
+
+.form-authorization form button{
+    width: 220px;
+    height: 40px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#saveData{
+    height: 20px;
+    width: 20px;
+    border: 1px solid black;
+    box-shadow: none;
+    outline: none;
+}
+
+.saveData-inlineBlock{
+    align-self: flex-start;
+    margin-top: 0px;
+    margin-left: 36px;
+}
+
+.saveData-inlineBlock label{
+    font-size: 14px;
+    vertical-align: 3px;
+    opacity: .7;
+}
