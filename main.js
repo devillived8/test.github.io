@@ -1,4 +1,6 @@
 (function(){
+   
+
 
 let canvas = document.createElement("canvas");
 document.querySelector(".wrapper").appendChild(canvas);
@@ -103,10 +105,25 @@ function reDrawLines(){
 }
 
 
- 
+function adaptiveablity() {
+    let height = screen.height;
+    let width = screen.width;
+
+    if(width <= 412){
+        properties.value = 50;
+    } else if(width <= 768){
+        properties.value = 80;
+    } else{
+        properties.value = 120; 
+    }
+
+}
+
+adaptiveablity();
 
 
 function loop(){
+    
     reDrawBackground()
     reDrawParticles();
     reDrawLines();
@@ -134,7 +151,7 @@ function reDrawParticles(){
 
 
 generationParticles();
-
+adaptiveablity();
 
 }());
 
